@@ -51,7 +51,7 @@ if not os.path.exists(KUBE_FILEPATH):
     kube_content['users'] = [
     {
     'name':'aws',
-    'user':'lambda'
+    'user':[{'name': 'lambda'}]
     }]
 
     print(kube_content)
